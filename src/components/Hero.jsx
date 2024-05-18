@@ -23,12 +23,13 @@ export default function Hero() {
             })}
         >
             <Container
+                id="about"
                 sx={{
                     display: 'flex',
                     flexDirection: 'column',
                     alignItems: 'center',
                     pt: { xs: 14, sm: 20 },
-                    pb: { xs: 8, sm: 12 },
+                    pb: { xs: 4, sm: 6 },
                 }}
             >
                 <Stack spacing={2} useFlexGap sx={{ width: { xs: '100%', sm: '70%' } }}>
@@ -59,7 +60,8 @@ export default function Hero() {
                     <Box
                         id="image"
                         sx={(theme) => ({
-                            mt: { xs: 4, sm: 5 },
+                            mt: { xs: 2, sm: 3 },
+                            mb: { xs: 2, sm: 3 },
                             alignSelf: 'center',
                             height: { xs: 200, sm: 300 },
                             width: { xs: 200, sm: 300 },
@@ -87,12 +89,34 @@ export default function Hero() {
                         color="text.secondary"
                         sx={{ alignSelf: 'center', width: { sm: '100%', md: '80%' } }}
                     >
-                        Explore our cutting-edge dashboard, delivering high-quality solutions
-                        tailored to your needs. Elevate your experience with top-tier features
-                        and services.
+                        Soy un desarrollador web apasionado y con una sólida experiencia en la creación de 
+                        aplicaciones robustas y escalables. Mi principal área de especialización es el desarrollo 
+                        frontend utilizando tecnologías modernas como ReactJs y Angular, así como el desarrollo 
+                        multiplataforma con Flutter.
+                    </Typography>
+
+                    <Typography
+                        textAlign="center"
+                        color="text.secondary"
+                        sx={{ alignSelf: 'center', width: { sm: '100%', md: '80%' } }}
+                    >
+                        En el ámbito del backend, tengo experiencia en NodeJs y PHP, lo que me permite construir y 
+                        mantener servidores eficientes y seguros. Estoy familiarizado con bases de datos tanto 
+                        relacionales como no relacionales, específicamente MongoDB y MySQL, asegurando la integridad 
+                        y accesibilidad de los datos.
+                    </Typography>
+
+                    <Typography
+                        textAlign="center"
+                        color="text.secondary"
+                        sx={{ alignSelf: 'center', width: { sm: '100%', md: '80%' } }}
+                    >
+                        Utilizo herramientas de control de versiones como Git y GitHub para colaborar efectivamente en proyectos y 
+                        gestionar el código de manera eficiente. Mi enfoque se centra en escribir código limpio y bien documentado, 
+                        siguiendo las mejores prácticas de la industria.
                     </Typography>
                 </Stack>
-                <Box
+                {/* <Box
                     id="image"
                     sx={(theme) => ({
                         mt: { xs: 4, sm: 5 },
@@ -115,7 +139,7 @@ export default function Hero() {
                                 ? `0 0 12px 8px ${alpha('#9CCCFC', 0.2)}`
                                 : `0 0 24px 12px ${alpha('#033363', 0.2)}`,
                     })}
-                />
+                /> */}
             </Container>
         </Box>
     );
