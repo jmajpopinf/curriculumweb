@@ -1,10 +1,11 @@
-import { Box, CssBaseline, ThemeProvider, ToggleButton, ToggleButtonGroup, createTheme } from '@mui/material';
+import { Box, CssBaseline, Divider, ThemeProvider, ToggleButton, ToggleButtonGroup, createTheme } from '@mui/material';
 import React from 'react';
 import getLPTheme from './getLPTheme';
 import PropTypes from 'prop-types';
 import AppAppBar from './components/AppAppBar';
 import Hero from './components/Hero';
 import LogoCollection from './components/LogoCollection';
+import Features from './components/Features';
 
 function ToggleCustomTheme({ showCustomTheme, toggleCustomTheme}){
   return (
@@ -70,6 +71,9 @@ function App() {
       <Hero />
       <Box sx={{ bgcolor: 'background.default' }}>
         <LogoCollection />
+        <Divider />
+        <Features />
+        
       </Box>
     </ThemeProvider>
   );
