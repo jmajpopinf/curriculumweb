@@ -1,14 +1,26 @@
 import * as React from 'react';
 import { alpha } from '@mui/material';
 import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
 import Container from '@mui/material/Container';
-import Link from '@mui/material/Link';
 import Stack from '@mui/material/Stack';
-import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
 
 export default function Hero() {
+    const [yearsExperience, setYearsExperience] = React.useState(0);
+    const [monthsExperience, setMonthsExperience] = React.useState(0);
+    
+    React.useEffect(() => {
+        const fechaInicio = '2022-01-04';
+        const fechaActual = new Date();
+        const Inicio = new Date(fechaInicio);
+
+        let anios = fechaActual.getFullYear() - Inicio.getFullYear();
+        let meses = fechaActual.getMonth() - Inicio.getMonth();
+        
+        setYearsExperience(anios);
+        setMonthsExperience(meses);
+    },[]);
+
     return (
         <Box
             id="hero"
@@ -83,6 +95,14 @@ export default function Hero() {
                         })}
                     />
 
+                    <Typography
+                        component="h6"
+                        variant='h6'
+                        align='center'
+                        color='text.primary'
+                    >
+                        Experiencia: {yearsExperience} años, {monthsExperience} meses.
+                    </Typography>
 
                     <Typography
                         textAlign="center"
