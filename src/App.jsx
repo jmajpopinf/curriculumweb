@@ -74,6 +74,7 @@ function App() {
         <LogoCollection />
         <Divider />
         <Features />
+        <Divider />
         <Education />
       </Box>
     </ThemeProvider>
