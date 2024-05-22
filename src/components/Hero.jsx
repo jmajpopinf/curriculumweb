@@ -96,10 +96,13 @@ export default function Hero() {
                     />
 
                     <Typography
-                        component="h6"
-                        variant='h6'
-                        align='center'
-                        color='text.primary'
+                        variant="h6"
+                        textAlign="center"
+                        sx={{
+                            // fontSize: 'clamp(3rem, 10vw, 4rem)',
+                            color: (theme) =>
+                                theme.palette.mode === 'light' ? 'primary.main' : 'primary.light',
+                        }}
                     >
                         Experiencia: {yearsExperience} años, {monthsExperience} meses.
                     </Typography>
