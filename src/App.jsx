@@ -6,6 +6,7 @@ import AppAppBar from './components/AppAppBar';
 import Hero from './components/Hero';
 import LogoCollection from './components/LogoCollection';
 import Features from './components/Features';
+import Education from './components/Education';
 
 function ToggleCustomTheme({ showCustomTheme, toggleCustomTheme}){
   return (
@@ -73,7 +74,7 @@ function App() {
         <LogoCollection />
         <Divider />
         <Features />
-        
+        <Education />
       </Box>
     </ThemeProvider>
   );
