@@ -102,7 +102,8 @@ function AppAppBar({ mode, toggleColorMode }) {
                   sx={{ py: '6px', px: '12px' }}
                 >
                   <Typography variant="body2" color="text.primary">
-                    About
+                    Acerda de mi
+                    {/* About */}
                   </Typography>
                 </MenuItem>
                 <MenuItem
@@ -110,7 +111,8 @@ function AppAppBar({ mode, toggleColorMode }) {
                   sx={{ py: '6px', px: '12px' }}
                 >
                   <Typography variant="body2" color="text.primary">
-                    Skills
+                    Habilidades
+                    {/* Skills */}
                   </Typography>
                 </MenuItem>
                 <MenuItem
@@ -118,7 +120,8 @@ function AppAppBar({ mode, toggleColorMode }) {
                   sx={{ py: '6px', px: '12px' }}
                 >
                   <Typography variant="body2" color="text.primary">
-                    Projects
+                    Proyectos
+                    {/* Projects */}
                   </Typography>
                 </MenuItem>
                 <MenuItem
@@ -126,7 +129,8 @@ function AppAppBar({ mode, toggleColorMode }) {
                   sx={{ py: '6px', px: '12px' }}
                 >
                   <Typography variant="body2" color="text.primary">
-                    Education
+                    Educación
+                    {/* Education */}
                   </Typography>
                 </MenuItem>
                 <MenuItem
@@ -134,7 +138,8 @@ function AppAppBar({ mode, toggleColorMode }) {
                   sx={{ py: '6px', px: '12px' }}
                 >
                   <Typography variant="body2" color="text.primary">
-                    Work
+                    Empleo
+                    {/* Work */}
                   </Typography>
                 </MenuItem>
                 <MenuItem
@@ -142,7 +147,8 @@ function AppAppBar({ mode, toggleColorMode }) {
                   sx={{ py: '6px', px: '12px' }}
                 >
                   <Typography variant="body2" color="text.primary">
-                    Contact
+                    Contacto
+                    {/* Contact */}
                   </Typography>
                 </MenuItem>
               </Box>
@@ -186,22 +192,28 @@ function AppAppBar({ mode, toggleColorMode }) {
                     <ToggleColorMode mode={mode} toggleColorMode={toggleColorMode} />
                   </Box>
                   <MenuItem onClick={() => scrollToSection('about')}>
-                    About
+                    Acerca de mi
+                    {/* About */}
                   </MenuItem>
                   <MenuItem onClick={() => scrollToSection('skills')}>
-                    Skills
+                    Habilidades
+                    {/* Skills */}
                   </MenuItem>
                   <MenuItem onClick={() => scrollToSection('projects')}>
-                    Projects
+                    Proyectos
+                    {/* Projects */}
                   </MenuItem>
                   <MenuItem onClick={() => scrollToSection('education')}>
-                    Education
+                    Educación
+                    {/* Education */}
                   </MenuItem>
                   <MenuItem onClick={() => scrollToSection('work')}>
-                    Work
+                    Empleo
+                    {/* Work */}
                   </MenuItem>
                    <MenuItem onClick={() => scrollToSection('contact')}>
-                    Contact
+                    Contacto
+                    {/* Contact */}
                   </MenuItem>
                 </Box>
               </Drawer>

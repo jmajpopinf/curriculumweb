@@ -44,7 +44,7 @@ export default function Hero() {
                     pb: { xs: 4, sm: 6 },
                 }}
             >
-                <Stack spacing={2} useFlexGap sx={{ width: { xs: '100%', sm: '70%' } }}>
+                <Stack spacing={3} useFlexGap sx={{ width: { xs: '100%', sm: '70%' } }}>
                     <Typography
                         variant="h1"
                         sx={{
@@ -55,7 +55,7 @@ export default function Hero() {
                             fontSize: 'clamp(3.5rem, 10vw, 4rem)',
                         }}
                     >
-                        Web&nbsp;
+                        Desarrollador&nbsp;
                         <Typography
                             component="span"
                             variant="h1"
@@ -65,7 +65,7 @@ export default function Hero() {
                                     theme.palette.mode === 'light' ? 'primary.main' : 'primary.light',
                             }}
                         >
-                            Developer
+                            Web&App
                         </Typography>
                     </Typography>
 
@@ -95,17 +95,43 @@ export default function Hero() {
                         })}
                     />
 
-                    <Typography
-                        variant="h6"
-                        textAlign="center"
-                        sx={{
-                            // fontSize: 'clamp(3rem, 10vw, 4rem)',
-                            color: (theme) =>
-                                theme.palette.mode === 'light' ? 'primary.main' : 'primary.light',
-                        }}
-                    >
-                        Experiencia: {yearsExperience} años, {monthsExperience} meses.
-                    </Typography>
+                    <Stack spacing={0} useFlexGap>
+                        <Typography
+                            variant="h6"
+                            textAlign="center"
+                            sx={{
+                                // fontSize: 'clamp(3rem, 10vw, 4rem)',
+                                color: (theme) =>
+                                    theme.palette.mode === 'light' ? 'primary.main' : 'primary.light',
+                            }}
+                        >
+                            José Manuel Ajpop Sipac
+                        </Typography>
+
+                        <Typography
+                            variant="h6"
+                            textAlign="center"
+                            sx={{
+                                // fontSize: 'clamp(3rem, 10vw, 4rem)',
+                                color: (theme) =>
+                                    theme.palette.mode === 'light' ? 'primary.main' : 'primary.light',
+                            }}
+                        >
+                            Guatemala
+                        </Typography>
+
+                        <Typography
+                            variant="h6"
+                            textAlign="center"
+                            sx={{
+                                // fontSize: 'clamp(3rem, 10vw, 4rem)',
+                                color: (theme) =>
+                                    theme.palette.mode === 'light' ? 'primary.main' : 'primary.light',
+                            }}
+                        >
+                            Experiencia: {yearsExperience} años, {monthsExperience} meses.
+                        </Typography>
+                    </Stack>
 
                     <Typography
                         textAlign="center"

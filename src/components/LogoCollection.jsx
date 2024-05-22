@@ -52,7 +52,8 @@ const LogoCollection = () => {
                     align='center'
                     color='text.primary'
                 >
-                    Skills
+                    Habilidades
+                    {/* Skills */}
                 </Typography>
                 <Typography
                     component="p"
@@ -63,7 +64,8 @@ const LogoCollection = () => {
                         mb: 4,
                     }}
                 >
-                    Framewors, Data Base, Libraries and Tools.
+                    Framewors, Base de datos, Librarias y herramientas de desarrollo
+                    {/* Framewors, Data Base, Libraries and Dev Tools. */}
                 </Typography>
                 <Grid
                     container
