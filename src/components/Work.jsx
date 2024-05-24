@@ -1,0 +1,114 @@
+import * as React from 'react';
+import Box from '@mui/material/Box';
+import Card from '@mui/material/Card';
+import Container from '@mui/material/Container';
+import Grid from '@mui/material/Grid';
+import Typography from '@mui/material/Typography';
+import { Avatar, CardContent, CardHeader } from '@mui/material';
+
+const userTestimonials = [
+    {
+        avatar: <Avatar alt="Remy Sharp" src="/static/work-images/logo.png" />,
+        name: 'Signus Corp',
+        occupation: 'Desarrollador web',
+        testimonial:
+            "En Signus Corp, trabajo como Desarrollador de Aplicaciones Web, utilizando Angular y ReactJS para el frontend, y Node.js con Express para el backend. Gestioné bases de datos SQL y MongoDB, y utilicé Git y GitHub para el control de versiones y la colaboración. Mis responsabilidades incluyeron el desarrollo de interfaces de usuario dinámicas, la implementación de servidores y bases de datos, la optimización de aplicaciones web, y la realización de pruebas y depuración para asegurar la calidad del software.",
+    },
+    {
+        avatar: <Avatar alt="Travis Howard" src="/static/work-images/netsurfing.png" />,
+        name: 'NetSurfing',
+        occupation: 'Propietario',
+        testimonial:
+            "En mi empresa propia, NetSurfing, trabajé como freelancer en el desarrollo de aplicaciones móviles Android, destacando el proyecto Talkid. Poseo conocimientos básicos en desarrollo de videojuegos con Unity 3D y manejo de bases de datos SQL y MongoDB. Realicé proyectos en diversos lenguajes de programación, incluyendo Java, JavaScript, C#, y Python.",
+    },
+    {
+        avatar: <Avatar alt="Cindy Baker" src="/static/work-images/netsurfing.png" />,
+        name: 'NetSurfing',
+        occupation: 'Propietario',
+        testimonial:
+            'En mi empresa propia, NetSurfing, adquirí experiencia en soporte técnico para equipos de cómputo y manejo de programas de diseño como Photoshop, Illustrator y Sony Vegas. Además, tengo habilidades en el uso de paquetes de ofimática, lo que me permite realizar tareas administrativas y de gestión de manera eficiente.',
+    },
+];
+
+export default function Work() {
+
+    return (
+        <Box
+            id="work"
+            sx={{
+                pt: { xs: 4, sm: 12 },
+                pb: { xs: 8, sm: 16 },
+                color: 'white',
+                bgcolor: '#06090a',
+            }}
+        >
+            <Container
+                sx={{
+                    position: 'relative',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    alignItems: 'center',
+                    gap: { xs: 3, sm: 6 },
+                }}
+            >
+                <Box
+                    sx={{
+                        width: { sm: '100%', md: '60%' },
+                        textAlign: { sm: 'left', md: 'center' },
+                    }}
+                >
+                    <Typography component="h2" variant="h4">
+                        Empleo
+                    </Typography>
+                    <Typography variant="body1" sx={{ color: 'grey.400' }}>
+                        Experiencia laboral en el área de desarrollo de software y soporte tecnico.
+                    </Typography>
+                </Box>
+                <Grid container spacing={2.5}>
+                    {userTestimonials.map((testimonial, index) => (
+                        <Grid item xs={12} sm={6} md={4} key={index} sx={{ display: 'flex' }}>
+                            <Card
+                                sx={{
+                                    display: 'flex',
+                                    flexDirection: 'column',
+                                    justifyContent: 'space-between',
+                                    flexGrow: 1,
+                                    p: 1,
+                                    border: '1px solid',
+                                    borderColor: 'grey.800',
+                                    background: 'transparent',
+                                    backgroundColor: 'grey.900',
+                                }}
+                            >
+                                <CardContent>
+                                    <Typography variant="body2" color="text.secondary" sx={{ color: 'grey.400' }}>
+                                        {testimonial.testimonial}
+                                    </Typography>
+                                </CardContent>
+                                <Box
+                                    sx={{
+                                        display: 'flex',
+                                        flexDirection: 'row',
+                                        justifyContent: 'space-between',
+                                        pr: 2,
+                                        color: 'grey.400'
+                                    }}
+                                >
+                                    <CardHeader
+                                        avatar={testimonial.avatar}
+                                        title={testimonial.name}
+                                        subheader={
+                                            <Typography variant="body2" color="grey.400">
+                                                {testimonial.occupation}
+                                            </Typography>
+                                        }
+                                    />
+                                </Box>
+                            </Card>
+                        </Grid>
+                    ))}
+                </Grid>
+            </Container>
+        </Box>
+    );
+}

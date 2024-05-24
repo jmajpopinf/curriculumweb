@@ -7,6 +7,7 @@ import Hero from './components/Hero';
 import LogoCollection from './components/LogoCollection';
 import Features from './components/Features';
 import Education from './components/Education';
+import Work from './components/Work';
 
 function ToggleCustomTheme({ showCustomTheme, toggleCustomTheme}){
   return (
@@ -76,6 +77,8 @@ function App() {
         <Features />
         <Divider />
         <Education />
+        <Divider />
+        <Work />
       </Box>
     </ThemeProvider>
   );
