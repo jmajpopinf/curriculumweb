@@ -8,6 +8,7 @@ import LogoCollection from './components/LogoCollection';
 import Features from './components/Features';
 import Education from './components/Education';
 import Work from './components/Work';
+import Footer from './components/Footer';
 
 function ToggleCustomTheme({ showCustomTheme, toggleCustomTheme}){
   return (
@@ -79,6 +80,8 @@ function App() {
         <Education />
         <Divider />
         <Work />
+        <Divider />
+        <Footer />
       </Box>
     </ThemeProvider>
   );
