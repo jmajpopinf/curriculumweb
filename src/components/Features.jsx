@@ -19,25 +19,30 @@ const items = [
     title: 'TalKid',
     description:
       'Aplicación movil desarrollada para el tratamiento del lenguaje en niños y niñas de 3 a 6 años, del curso proyecto de gración de la carrera de Ingeniería en Sistemas en la Universida Mariano Galvez de Guatemala.',
+    technologies: 'Android Studio, Java, Django, Python, PostgreSql',
     imageLight: 'url("/static/projects-images/iconoApp.png")',
     imageDark: 'url("/static/projects-images/iconoApp.png")',
+    projectUrl: 'https://play.google.com/store/apps/details?id=com.talkid.registration&pcampaignid=web_share',
   },
   {
     icon: <EdgesensorHighRoundedIcon />,
-    title: 'Mobile integration',
+    title: 'Biblioteca Virtual Patzún',
     description:
-      'This item could provide information about the mobile app version of the product.',
+      'Proyecto desarrollado e implementado para acceso gratuito a libros digitales en la municipalidad de Patzún Chimaltenango.',
+    technologies: 'Django, Python, PostgreSql',
     imageLight: 'url("/static/images/templates/templates-images/mobile-light.png")',
     imageDark: 'url("/static/images/templates/templates-images/mobile-dark.png")',
+    projectUrl: '',
   },
-  {
-    icon: <DevicesRoundedIcon />,
-    title: 'Available on all platforms',
-    description:
-      'This item could let users know the product is available on all platforms, such as web, mobile, and desktop.',
-    imageLight: 'url("/static/images/templates/templates-images/devices-light.png")',
-    imageDark: 'url("/static/images/templates/templates-images/devices-dark.png")',
-  },
+  // {
+  //   icon: <DevicesRoundedIcon />,
+  //   title: 'Available on all platforms',
+  //   description:
+  //     'This item could let users know the product is available on all platforms, such as web, mobile, and desktop.',
+  //   imageLight: 'url("/static/images/templates/templates-images/devices-light.png")',
+  //   imageDark: 'url("/static/images/templates/templates-images/devices-dark.png")',
+  //   projectUrl: '',
+  // },
 ];
 
 export default function Features() {
@@ -145,7 +150,7 @@ export default function Features() {
             useFlexGap
             sx={{ width: '100%', display: { xs: 'none', sm: 'flex' } }}
           >
-            {items.map(({ icon, title, description }, index) => (
+            {items.map(({ icon, title, description, technologies, projectUrl }, index) => (
               <Card
                 key={index}
                 variant="outlined"
@@ -209,6 +214,14 @@ export default function Features() {
                     >
                       {description}
                     </Typography>
+                    <Typography
+                      color="text.secondary"
+                      variant="body2"
+                      fontWeight="bold"
+                      sx={{ my: 0.5 }}
+                    >
+                      Tecnologías: {technologies}
+                    </Typography>
                     <Link
                       color="primary"
                       variant="body2"
@@ -221,10 +234,10 @@ export default function Features() {
                       }}
                       onClick={(event) => {
                         event.stopPropagation();
-                        window.open('https://play.google.com/store/apps/details?id=com.talkid.registration&pcampaignid=web_share', '_blank');
+                        window.open(projectUrl, '_blank');
                       }}
                     >
-                      <span>Learn more</span>
+                      <span>Ver proyecto</span>
                       <ChevronRightRoundedIcon
                         fontSize="small"
                         sx={{ mt: '1px', ml: '2px' }}
@@ -253,11 +266,11 @@ export default function Features() {
           >
             <Box
               sx={{
-                m: 'auto',
-                width: '80%',
-                height: '74%',
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
+                m: '20px auto',
+                width: 500,
+                height: 500,
+                backgroundSize: 'contain',
+                // backgroundPosition: 'center',
                 backgroundImage: (theme) =>
                   theme.palette.mode === 'light'
                     ? items[selectedItemIndex].imageLight

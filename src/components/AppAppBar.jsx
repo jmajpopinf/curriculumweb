@@ -15,9 +15,10 @@ import ToggleColorMode from './ToggleColorMode';
 
 
 const logoStyle = {
-  width: '140px',
+  width: '40px',
   height: 'auto',
   cursor: 'pointer',
+  margin: '10px',
 };
 
 function AppAppBar({ mode, toggleColorMode }) {
@@ -86,11 +87,14 @@ function AppAppBar({ mode, toggleColorMode }) {
             >
               <img
                 src={
-                  'https://assets-global.website-files.com/61ed56ae9da9fd7e0ef0a967/61f12e6faf73568658154dae_SitemarkDefault.svg'
+                  '/static/images/marslab2.png'
                 }
                 style={logoStyle}
-                alt="logo of sitemark"
+                alt="logo"
               />
+              <Typography variant="body2" color="text.primary" fontWeight="bold" fontSize="1.2rem">
+                MarsLab
+              </Typography>
               <Box sx={{ 
                   display: { xs: 'none', md: 'flex' },
                   justifyContent: 'center', // Centra los elementos horizontalmente

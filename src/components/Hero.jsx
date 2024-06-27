@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { alpha } from '@mui/material';
+import { Link, alpha } from '@mui/material';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import Stack from '@mui/material/Stack';
@@ -138,9 +138,9 @@ export default function Hero() {
                         color="text.secondary"
                         sx={{ alignSelf: 'center', width: { sm: '100%', md: '80%' } }}
                     >
-                        Soy un desarrollador web apasionado y con una sólida experiencia en la creación de 
-                        aplicaciones robustas y escalables. Mi principal área de especialización es el desarrollo 
-                        frontend utilizando tecnologías modernas como ReactJs y Angular, así como el desarrollo 
+                        Sólida experiencia en la creación de 
+                        aplicaciones robustas y escalables. Especialización en desarrollo 
+                        frontend utilizando tecnologías modernas como ReactJs, Angular y desarrollo 
                         multiplataforma con Flutter.
                     </Typography>
 
@@ -149,8 +149,7 @@ export default function Hero() {
                         color="text.secondary"
                         sx={{ alignSelf: 'center', width: { sm: '100%', md: '80%' } }}
                     >
-                        En el ámbito del backend, tengo experiencia en NodeJs y PHP, lo que me permite construir y 
-                        mantener servidores eficientes y seguros. Estoy familiarizado con bases de datos tanto 
+                        Desarrollo backend, con experiencia en NodeJs y PHP, bases de datos tanto 
                         relacionales como no relacionales, específicamente MongoDB y MySQL, asegurando la integridad 
                         y accesibilidad de los datos.
                     </Typography>
@@ -160,9 +159,17 @@ export default function Hero() {
                         color="text.secondary"
                         sx={{ alignSelf: 'center', width: { sm: '100%', md: '80%' } }}
                     >
-                        Utilizo herramientas de control de versiones como Git y GitHub para colaborar efectivamente en proyectos y 
-                        gestionar el código de manera eficiente. Mi enfoque se centra en escribir código limpio y bien documentado, 
+                        Experiencia con herramientas de control de versiones como Git y GitHub para trabajo colaborativo. 
+                        Mi enfoque se centra en escribir código limpio y bien documentado, 
                         siguiendo las mejores prácticas de la industria.
+                    </Typography>
+
+                    <Typography 
+                        textAlign="center"
+                        color="text.secondary" 
+                        sx={{ alignSelf: 'center', width: { sm: '100%', md: '80%' } }}
+                    >
+                        <Link href="https://drive.google.com/file/d/1trCFWN48RVMFmkz_4E-jHUE2UnvfSh1d/view?usp=sharing" target="_blank">Descargar Curriculm Vitae</Link>
                     </Typography>
                 </Stack>
                 {/* <Box
