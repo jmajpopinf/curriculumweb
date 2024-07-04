@@ -87,7 +87,7 @@ function AppAppBar({ mode, toggleColorMode }) {
             >
               <img
                 src={
-                  '/static/images/marslab2.png'
+                  'static/images/marslab2.png'
                 }
                 style={logoStyle}
                 alt="logo"

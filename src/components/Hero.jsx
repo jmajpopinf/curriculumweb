@@ -79,8 +79,8 @@ export default function Hero() {
                             width: { xs: 200, sm: 300 },
                             backgroundImage:
                                 theme.palette.mode === 'light'
-                                    ? 'url("/static/images/foto.jpg")'
-                                    : 'url("/static/images/foto.jpg")',
+                                    ? 'url("static/images/foto.jpg")'
+                                    : 'url("static/images/foto.jpg")',
                             backgroundSize: 'cover',
                             borderRadius: '10px',
                             outline: '1px solid',
