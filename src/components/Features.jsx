@@ -30,9 +30,9 @@ const items = [
     description:
       'Proyecto desarrollado e implementado para acceso gratuito a libros digitales en la municipalidad de Patzún Chimaltenango.',
     technologies: 'Django, Python, PostgreSql',
-    imageLight: 'url("/static/images/templates/templates-images/mobile-light.png")',
-    imageDark: 'url("/static/images/templates/templates-images/mobile-dark.png")',
-    projectUrl: '',
+    imageLight: 'url("/static/projects-images/bibliotecaClaro.png")',
+    imageDark: 'url("/static/projects-images/bibliotecaOscuro.png")',
+    projectUrl: 'https://bibliotecapatzun.onrender.com',
   },
   // {
   //   icon: <DevicesRoundedIcon />,
