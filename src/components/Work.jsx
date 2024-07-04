@@ -8,7 +8,7 @@ import { Avatar, CardContent, CardHeader, Link } from '@mui/material';
 
 const userTestimonials = [
     {
-        avatar: <Avatar alt="Remy Sharp" src="/static/work-images/logo.png" />,
+        avatar: <Avatar alt="Remy Sharp" src="static/work-images/logo.png" />,
         name: 'Signus Corp',
         occupation: 'Desarrollador web',
         webUrl: 'https://www.signuscorp.com',
@@ -16,7 +16,7 @@ const userTestimonials = [
             "Desarrollador de Aplicaciones Web, utilizando Angular y ReactJS para el frontend, y Node.js con Express para el backend. Gestión de bases de datos SQL y MongoDB. Git y GitHub para el control de versiones. Diseño y desarrollo de interfaces de usuario dinámicas, implementación de servidores y bases de datos, optimización de aplicaciones web, pruebas y depuración para asegurar la calidad del software.",
     },
     {
-        avatar: <Avatar alt="Travis Howard" src="/static/work-images/netsurfing.png" />,
+        avatar: <Avatar alt="Travis Howard" src="static/work-images/netsurfing.png" />,
         name: 'NetSurfing',
         occupation: 'Propietario/Freelancer',
         webUrl: 'https://www.marlslab.com',
@@ -24,7 +24,7 @@ const userTestimonials = [
             "NetSurfing, freelancer en el desarrollo de aplicaciones móviles Android, destacando el proyecto Talkid. Poseo conocimientos básicos en desarrollo de videojuegos con Unity 3D y manejo de bases de datos SQL y MongoDB. Creación de proyectos en diversos lenguajes de programación, incluyendo Java, JavaScript, C#, y Python.",
     },
     {
-        avatar: <Avatar alt="Cindy Baker" src="/static/work-images/netsurfing.png" />,
+        avatar: <Avatar alt="Cindy Baker" src="static/work-images/netsurfing.png" />,
         name: 'NetSurfing',
         occupation: 'Propietario/Tecnico en computación',
         webUrl: 'https://www.marlslab.com',

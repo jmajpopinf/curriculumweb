@@ -20,8 +20,8 @@ const items = [
     description:
       'Aplicación movil desarrollada para el tratamiento del lenguaje en niños y niñas de 3 a 6 años, del curso proyecto de gración de la carrera de Ingeniería en Sistemas en la Universida Mariano Galvez de Guatemala.',
     technologies: 'Android Studio, Java, Django, Python, PostgreSql',
-    imageLight: 'url("/static/projects-images/iconoApp.png")',
-    imageDark: 'url("/static/projects-images/iconoApp.png")',
+    imageLight: 'url("static/projects-images/iconoApp.png")',
+    imageDark: 'url("static/projects-images/iconoApp.png")',
     projectUrl: 'https://play.google.com/store/apps/details?id=com.talkid.registration&pcampaignid=web_share',
   },
   {
@@ -30,8 +30,8 @@ const items = [
     description:
       'Proyecto desarrollado e implementado para acceso gratuito a libros digitales en la municipalidad de Patzún Chimaltenango.',
     technologies: 'Django, Python, PostgreSql',
-    imageLight: 'url("/static/projects-images/bibliotecaClaro.png")',
-    imageDark: 'url("/static/projects-images/bibliotecaOscuro.png")',
+    imageLight: 'url("static/projects-images/bibliotecaClaro.png")',
+    imageDark: 'url("static/projects-images/bibliotecaOscuro.png")',
     projectUrl: 'https://bibliotecapatzun.onrender.com',
   },
   // {

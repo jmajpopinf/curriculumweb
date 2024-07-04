@@ -3,25 +3,25 @@ import { Box, Container, Grid, Typography } from '@mui/material';
 import React from 'react';
 
 const whiteLogos = [
-    '/static/images/react.svg',
-    '/static/images/angular.svg',
-    '/static/images/flutter.svg',
-    '/static/images/nodejs.svg',
-    '/static/images/php.svg',
-    '/static/images/mongodb.svg',
-    '/static/images/mysql.svg',
-    '/static/images/gitbash.svg',
+    'static/images/react.svg',
+    'static/images/angular.svg',
+    'static/images/flutter.svg',
+    'static/images/nodejs.svg',
+    'static/images/php.svg',
+    'static/images/mongodb.svg',
+    'static/images/mysql.svg',
+    'static/images/gitbash.svg',
 ];
 
 const darkLogos = [
-    '/static/images/react.svg',
-    '/static/images/angular.svg',
-    '/static/images/flutter.svg',
-    '/static/images/nodejs.svg',
-    '/static/images/php.svg',
-    '/static/images/mongodb.svg',
-    '/static/images/mysql.svg',
-    '/static/images/gitbash.svg',
+    'static/images/react.svg',
+    'static/images/angular.svg',
+    'static/images/flutter.svg',
+    'static/images/nodejs.svg',
+    'static/images/php.svg',
+    'static/images/mongodb.svg',
+    'static/images/mysql.svg',
+    'static/images/gitbash.svg',
 ];
 
 const logoStyle = {
