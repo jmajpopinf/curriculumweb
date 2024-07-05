@@ -133,8 +133,12 @@ export default function Features() {
                   '& > svg': { transition: '0.2s' },
                   '&:hover > svg': { transform: 'translateX(2px)' },
                 }}
+                onClick={(event) => {
+                  event.stopPropagation();
+                  window.open(selectedFeature.projectUrl, '_blank');
+                }}
               >
-                <span>Learn more</span>
+                <span>Ver proyecto</span>
                 <ChevronRightRoundedIcon
                   fontSize="small"
                   sx={{ mt: '1px', ml: '2px' }}

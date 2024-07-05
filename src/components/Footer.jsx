@@ -131,19 +131,19 @@ export default function Footer() {
             py: { xs: 4, sm: 0 },
           }}
         >
-          <MenuItem onClick={() => scrollToSection('about')}>
+          <MenuItem sx={{borderRadius: '6px'}} onClick={() => scrollToSection('about')}>
             Acerca de mi
           </MenuItem>
-          <MenuItem onClick={() => scrollToSection('skills')}>
+          <MenuItem sx={{borderRadius: '6px'}} onClick={() => scrollToSection('skills')}>
             Habilidades
           </MenuItem>
-          <MenuItem onClick={() => scrollToSection('projects')}>
+          <MenuItem sx={{borderRadius: '6px'}} onClick={() => scrollToSection('projects')}>
             Proyectos
           </MenuItem>
-          <MenuItem  onClick={() => scrollToSection('education')}>
+          <MenuItem sx={{borderRadius: '6px'}} onClick={() => scrollToSection('education')}>
             Educación
           </MenuItem>
-          <MenuItem  onClick={() => scrollToSection('work')}>
+          <MenuItem sx={{borderRadius: '6px'}} onClick={() => scrollToSection('work')}>
             Empleo
           </MenuItem>
         </Grid>

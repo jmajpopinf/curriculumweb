@@ -103,7 +103,7 @@ function AppAppBar({ mode, toggleColorMode }) {
                 }}>
                 <MenuItem
                   onClick={() => scrollToSection('about')}
-                  sx={{ py: '6px', px: '12px' }}
+                  sx={{ py: '6px', px: '12px', borderRadius: '6px'}}
                 >
                   <Typography variant="body2" color="text.primary">
                     Acerda de mi
@@ -112,7 +112,7 @@ function AppAppBar({ mode, toggleColorMode }) {
                 </MenuItem>
                 <MenuItem
                   onClick={() => scrollToSection('skills')}
-                  sx={{ py: '6px', px: '12px' }}
+                  sx={{ py: '6px', px: '12px', borderRadius: '6px'}}
                 >
                   <Typography variant="body2" color="text.primary">
                     Habilidades
@@ -121,7 +121,7 @@ function AppAppBar({ mode, toggleColorMode }) {
                 </MenuItem>
                 <MenuItem
                   onClick={() => scrollToSection('projects')}
-                  sx={{ py: '6px', px: '12px' }}
+                  sx={{ py: '6px', px: '12px', borderRadius: '6px'}}
                 >
                   <Typography variant="body2" color="text.primary">
                     Proyectos
@@ -130,7 +130,7 @@ function AppAppBar({ mode, toggleColorMode }) {
                 </MenuItem>
                 <MenuItem
                   onClick={() => scrollToSection('education')}
-                  sx={{ py: '6px', px: '12px' }}
+                  sx={{ py: '6px', px: '12px', borderRadius: '6px'}}
                 >
                   <Typography variant="body2" color="text.primary">
                     Educación
@@ -139,7 +139,7 @@ function AppAppBar({ mode, toggleColorMode }) {
                 </MenuItem>
                 <MenuItem
                   onClick={() => scrollToSection('work')}
-                  sx={{ py: '6px', px: '12px' }}
+                  sx={{ py: '6px', px: '12px', borderRadius: '6px'}}
                 >
                   <Typography variant="body2" color="text.primary">
                     Empleo
@@ -148,7 +148,7 @@ function AppAppBar({ mode, toggleColorMode }) {
                 </MenuItem>
                 <MenuItem
                   onClick={() => scrollToSection('contact')}
-                  sx={{ py: '6px', px: '12px' }}
+                  sx={{ py: '6px', px: '12px', borderRadius: '6px'}}
                 >
                   <Typography variant="body2" color="text.primary">
                     Contacto
