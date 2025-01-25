@@ -18,7 +18,7 @@ const items = [
     icon: <RecordVoiceOver />,
     title: 'TalKid',
     description:
-      'Aplicación movil desarrollada para el tratamiento del lenguaje en niños y niñas de 3 a 6 años, del curso proyecto de gración de la carrera de Ingeniería en Sistemas en la Universida Mariano Galvez de Guatemala.',
+      'Aplicación movil desarrollada para el tratamiento del lenguaje en niños y niñas de 3 a 6 años, del curso proyecto de graduación de la carrera de Ingeniería en Sistemas en la Universida Mariano Galvez de Guatemala.',
     technologies: 'Android Studio, Java, Django, Python, PostgreSql',
     imageLight: 'url("static/projects-images/iconoApp.png")',
     imageDark: 'url("static/projects-images/iconoApp.png")',
