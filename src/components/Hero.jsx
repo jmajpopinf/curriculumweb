@@ -79,8 +79,8 @@ export default function Hero() {
                             width: { xs: 200, sm: 300 },
                             backgroundImage:
                                 theme.palette.mode === 'light'
-                                    ? 'url("static/images/foto.jpg")'
-                                    : 'url("static/images/foto.jpg")',
+                                    ? 'url("static/images/foto2.png")'
+                                    : 'url("static/images/foto2.png")',
                             backgroundSize: 'cover',
                             borderRadius: '10px',
                             outline: '1px solid',
@@ -140,8 +140,8 @@ export default function Hero() {
                     >
                         Sólida experiencia en la creación de 
                         aplicaciones robustas y escalables. Especialización en desarrollo 
-                        frontend utilizando tecnologías modernas como ReactJs, Angular y desarrollo 
-                        multiplataforma con Flutter.
+                        frontend utilizando tecnologías modernas como ReactJs, Angular, ASP .NET y desarrollo 
+                        móvil con Android Studio.
                     </Typography>
 
                     <Typography
@@ -149,8 +149,8 @@ export default function Hero() {
                         color="text.secondary"
                         sx={{ alignSelf: 'center', width: { sm: '100%', md: '80%' } }}
                     >
-                        Desarrollo backend, con experiencia en NodeJs y PHP, bases de datos tanto 
-                        relacionales como no relacionales, específicamente MongoDB y MySQL, asegurando la integridad 
+                        Desarrollo backend, con experiencia en NodeJs, C++ y PHP, bases de datos tanto 
+                        relacionales como no relacionales, específicamente MongoDB, SQL Server y MySQL, asegurando la integridad 
                         y accesibilidad de los datos.
                     </Typography>
 
@@ -169,7 +169,7 @@ export default function Hero() {
                         color="text.secondary" 
                         sx={{ alignSelf: 'center', width: { sm: '100%', md: '80%' } }}
                     >
-                        <Link href="https://drive.google.com/file/d/1trCFWN48RVMFmkz_4E-jHUE2UnvfSh1d/view?usp=sharing" target="_blank">Descargar Curriculm Vitae</Link>
+                        <Link href="https://drive.google.com/file/d/1WQT6IcSJDK2wxwKMTHzWeaiJBJcuH7br/view?usp=sharing" target="_blank">Descargar Curriculm Vitae</Link>
                     </Typography>
                 </Stack>
                 {/* <Box

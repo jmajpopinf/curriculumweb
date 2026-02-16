@@ -8,6 +8,14 @@ import { Avatar, CardContent, CardHeader, Link } from '@mui/material';
 
 const userTestimonials = [
     {
+        avatar: <Avatar alt="Remy Sharp" src="static/work-images/gyt.png" />,
+        name: 'Banco G&T Continental',
+        occupation: 'Ingeniero de desarrollo',
+        webUrl: 'https://www.gtc.com.gt/',
+        testimonial:
+            "Ingeniero de Desarrollo enfocado en la resolución de incidencias, mejoras y nuevas funcionalidades del sistema Plataforma de Agencias, trabajando en front end, back end y base de datos. utilizando tecnologías como ASP .NET clásico, C++, SQL Server. Además, apoyé como Ingeniero de Calidad en pruebas funcionales y documentación técnica, asegurando el cumplimiento de estándares.",
+    },
+    {
         avatar: <Avatar alt="Remy Sharp" src="static/work-images/logo.png" />,
         name: 'Signus Corp',
         occupation: 'Desarrollador web',
